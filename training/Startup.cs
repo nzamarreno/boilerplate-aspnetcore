@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using training.Repositories;
-using training.Repositories.Contrat;
+using Boilerplate.Repositories;
+using Boilerplate.Repositories.Contrat;
 
 namespace training
 {
@@ -42,7 +42,7 @@ namespace training
 
             // Configure service 
             var connection = @"Server=192.168.99.100;Database=master;User Id=sa;Password=Your_password123;Integrated Security=False;MultipleActiveResultSets=True";
-            services.AddDbContext<TrainingContext>
+            services.AddDbContext<DatabaseContext>
                 (options => options.UseSqlServer(connection));
 
             // Add Repositories

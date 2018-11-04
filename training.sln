@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "training", "training\training.csproj", "{F6CDEBBD-0711-4742-98F0-08C2E6342C1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boilerplate", "training\Boilerplate.csproj", "{F6CDEBBD-0711-4742-98F0-08C2E6342C1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "training.Tests", "training.Tests\training.Tests.csproj", "{6EBF17BF-BD7B-4482-94E9-D9589DABA0D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boilerplate.Tests", "training.Tests\Boilerplate.Tests.csproj", "{6EBF17BF-BD7B-4482-94E9-D9589DABA0D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

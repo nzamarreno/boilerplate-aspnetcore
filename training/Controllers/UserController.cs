@@ -1,4 +1,4 @@
-﻿namespace training.Controllers
+﻿namespace Boilerplate.Controllers
 {
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authentication.Cookies;
@@ -8,9 +8,9 @@
     using System.Collections.Generic;
     using System.Security.Claims;
     using System.Threading.Tasks;
-    using training.Entities;
-    using training.Repositories.Contrat;
-    using training.ViewModel;
+    using Boilerplate.Repositories.Contrat;
+    using Boilerplate.Entities;
+    using Boilerplate.ViewModel;
 
     [Route("api/user")]
     [ApiController]
@@ -35,7 +35,8 @@
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, userIsAuthenticated.LastName),
-                    new Claim(ClaimTypes.Role, userIsAuthenticated.Role)
+                    new Claim(ClaimTypes.Role, userIsAuthenticated.Role),
+                    new Claim(ClaimTypes.Email, userIsAuthenticated.Email),
                 };
 
                 var userIdentity = new ClaimsIdentity(claims);

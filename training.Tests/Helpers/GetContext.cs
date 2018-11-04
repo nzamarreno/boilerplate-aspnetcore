@@ -1,20 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using training.Repositories;
-
-namespace training.Tests.Helpers
+﻿namespace Boilerplate.Tests.Helpers
 {
+    using Boilerplate.Repositories;
+    using Microsoft.EntityFrameworkCore;
+
     public class GetContext
     {
-        public static TrainingContext ReturnContext()
+        public static DatabaseContext ReturnContext()
         {
-            var options = new DbContextOptionsBuilder<TrainingContext>()
+            var options = new DbContextOptionsBuilder<DatabaseContext>()
                 .UseInMemoryDatabase(databaseName: "master")
                 .Options;
 
-            return new TrainingContext(options);
+            return new DatabaseContext(options);
         }
     }
 }

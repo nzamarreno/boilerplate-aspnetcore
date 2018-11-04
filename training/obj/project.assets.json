@@ -12283,9 +12283,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas Zamarreno\\source\\repos\\training\\training\\training.csproj",
-      "projectName": "training",
-      "projectPath": "C:\\Users\\Nicolas Zamarreno\\source\\repos\\training\\training\\training.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas Zamarreno\\source\\repos\\training\\training\\Boilerplate.csproj",
+      "projectName": "Boilerplate",
+      "projectPath": "C:\\Users\\Nicolas Zamarreno\\source\\repos\\training\\training\\Boilerplate.csproj",
       "packagesPath": "C:\\Users\\Nicolas Zamarreno\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nicolas Zamarreno\\source\\repos\\training\\training\\obj\\",
       "projectStyle": "PackageReference",

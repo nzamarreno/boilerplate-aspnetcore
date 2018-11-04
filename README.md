@@ -1,9 +1,5 @@
 # docker-aspnet
 
-AspNet projet
-
-# Recruitment plan
-
 ## Installation with docker
 
 ### Stop Port 1433

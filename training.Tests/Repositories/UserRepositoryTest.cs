@@ -1,15 +1,13 @@
-﻿namespace training.Tests
+﻿namespace Boilerplate.Tests.Repositories
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using training.Entities;
-    using training.Repositories;
-    using training.Tests.Helpers;
+    using Boilerplate.Repositories;
+    using Boilerplate.Entities;
     using Xunit;
+    using Boilerplate.Tests.Helpers;
+
     public class UserRepositoryTest
     {
-        private readonly TrainingContext _context;
+        private readonly DatabaseContext _context;
         private readonly UserRepository _repository;
 
         public UserRepositoryTest()

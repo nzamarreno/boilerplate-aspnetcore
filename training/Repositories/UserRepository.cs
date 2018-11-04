@@ -1,19 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using training.Entities;
-using training.Repositories.Contrat;
+using Boilerplate.Entities;
+using Boilerplate.Repositories.Contrat;
 
-namespace training.Repositories
+namespace Boilerplate.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly TrainingContext _context; 
-        public UserRepository(TrainingContext trainingContext)
+        private readonly DatabaseContext _context; 
+        public UserRepository(DatabaseContext DatabaseContext)
         {
-            _context = trainingContext;
+            _context = DatabaseContext;
         }
 
         public async Task<User> GetUserByLogin(string email, string password)
@@ -23,10 +21,12 @@ namespace training.Repositories
             return userRegister;
         }
 
-        public async Task<int> Add(User user)
+        public async Task<User> Add(User user)
         {
             _context.Add(user);
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+
+            return user;
         }
 
         public async Task<List<User>> GetAll()
