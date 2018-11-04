@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+<button class="request">Envoyer requete</button>
+<button class="try">Essayer</button>
+<script>
+        const $button = document.querySelector(".request");
+        $button.addEventListener("click", () => {
+            console.log("post")
+            fetch('https://localhost:44380/api/user', {
+                method: 'POST',
+                body: JSON.stringify({ password: "hello", email: "zamarreno.nicolas@gmail.com" }),
+                credentials: 'include',
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(response => response.json()).then((response) => console.log(response))
+        })
+
+        const $try = document.querySelector(".try");
+        $try.addEventListener("click", () => {
+            console.log("get")
+            fetch('https://localhost:44380/api/user', {
+                method: 'GET',
+                credentials: 'include'
+            }).then(response => response.json()).then((response) => console.log(response))
+        })
+</script>
+
