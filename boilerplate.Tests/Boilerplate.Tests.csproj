@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\training\Boilerplate.csproj" />
+    <ProjectReference Include="..\boilerplate\Boilerplate.csproj" />
   </ItemGroup>
 
 </Project>
